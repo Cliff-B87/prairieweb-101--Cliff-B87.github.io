@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+            <meta charset="utf-8">
+
+            <title>Trail Enquiry &bull; Explore Alberta Trails</title>
+
+            <meta name="description"
+                content="Send a question about beginner-friendly trails.">
+
+            <meta name="viewport"
+                content="width=device-width, initial-scale=1">
+
+            <link rel="stylesheet"
+                href="style.css">
+
+    </head>
+    <body>
+        
+        <div class="content-container">
+        <h1>Explore Alberta Trails</h1>
+        </div>
+        <div class="content-container">
+        <nav>
+            <a href="#about"><button>About</button></a>
+            <a href="#trails"><button>Trails</button></a>
+            <a href="#contact"><button>Contact Us</button></a>
+            <a href="#faq"><button>FAQ</button></a>
+            <a href="#enquire"><button>Ask Us</button></a>
+        </nav>
+        </div>
+        <div class="imgcontainer">
+            <img src="./Hikerandtrail.png" alt="Scenic Alberta Trail">
+        </div>
+        <div class="content-container">
+        <section id="about">
+            <h2>About</h2>
+            <p>Welcome to Explore Alberta Trails! We are dedicated to providing information about the best trails in Alberta for hiking, biking, and outdoor adventures.</p>    
+        </section>
+        </div>
+        <div class="content-container">
+        <section id="trails">
+            <h2>Trails</h2>
+            <p>Discover a variety of trails across Alberta, from scenic hikes to challenging mountain paths. Our trail guides provide detailed information on difficulty levels, distances, and points of interest.</p>
+        </section>
+        </div>
+        <div class="content-container">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please reach out to us via email at <a href="mailto:alberta@trails.ca">alberta@trails.ca</a>.</p>
+        </section>
+        </div>
+        <div class="content-container">
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p>Here are some frequently asked questions about our trails and services.</p>
+        </section>
+        </div>
+
+            <main id="enquire">
+            <div class="content-container">
+            <h1>Trail Enquiry Form</h1>
+                <h3>Send us your questions about beginner-friendly trails!</h3>
+                <h3>We will respond within 2 business days.</h3>
+
+        <form id="enquiryForm" novalidate>
+
+        <div class="content-container">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+            <p id="nameError" class="error"></p>
+        </div>
+
+        <div class="content-container">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email">
+            <p id="emailError" class="error"></p>
+        </div>
+
+        <div class="content-container">
+            <label for="Trail-Length">Trail Length</label>
+            <select id="Trail-Length" name="trailLength">
+                <option value="">Select a length</option>
+                <option value="short">Short (less than 2 km)</option>
+                <option value="medium">Medium (2-5 km)</option>
+                <option value="long">Long (more than 5 km)</option>
+            </select>
+            <p id="trailLengthError" class="error"></p>
+        </div>
+
+        <div class="content-container">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" maxlength="500"></textarea>
+            <p id="messageError" class="error"></p>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <p id="result"></p>
+
+    </form>
+            </div>
+            </main>
+
+            <script type="module"
+                    src="script.js"></script>
+    
+        <main id="main">
+    <div class="content-container">
+        <h1>Trailhead Map & Live Weather</h1>
+    </div>
+
+        <div class="content-container">
+            <p>Welcome to the Trailhead Map & Live Weather page! Here, you can explore Alberta's trails and get real-time weather information for your outdoor adventures. Use the interactive map below to find trailheads, and check the current weather conditions for your chosen location.</p> 
+        </div>
+
+        <section class="content-container">
+            <h2>Interactive Map</h2>
+                <div id="map">
+                </div>
+        </section>
+            
+        <section class="content-container">
+
+            <h2>Current Weather</h2>
+
+            <p id="city"></p>
+            <p id="temperature"></p>
+            <p id="conditions"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+
+        </section>
+            
+        </main>
+    
+        <script type="module"
+                src="script.js">    
+        </script>
+
+    </body>
+
+</html>

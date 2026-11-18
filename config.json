@@ -1,0 +1,13 @@
+{
+  "mapKey": "AIzaSyBHTRgDMdSWAAArYRkaDSWdIt40Txxpps4",
+  "mapLocation": {
+    "latitude": 51.0447,
+    "longitude": -114.0719,
+    "zoom": 12
+  },
+  "weather": {
+    "weatherKey": "5ff16b8325e057be193f07f9e038c560",
+    "location": "Calgary",
+    "units": "metric"
+  }
+}
